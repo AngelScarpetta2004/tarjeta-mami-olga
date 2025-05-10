@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Te quiero, Mami Olga</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fef6f0, #f8d4d1);
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      color: #c2185b;
+      margin-bottom: 20px;
+      animation: slideIn 1.5s ease;
+    }
+
+    .flower {
+      width: 120px;
+      margin: 30px auto;
+      animation: bloom 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bloom {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #4e342e;
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #c2185b;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #880e4f;
+    }
+
+    .hidden-message {
+      margin-top: 25px;
+      font-size: 1.2rem;
+      color: #3e2723;
+      display: none;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Para mi querida Mami Olga</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Emoji_u1f33c.svg/120px-Emoji_u1f33c.svg.png" class="flower" alt="Flor">
+  <p>
+    Gracias por tu ternura, tus historias, tus consejos y por cada abrazo lleno de amor.  
+    Hoy celebro no solo a una abuela, sino a una segunda mamá. 🌸
+  </p>
+  <button onclick="mostrar()">Haz clic aquí, Mami Olga ✨</button>
+  <div id="mensaje" class="hidden-message">
+    ¡Te quiero muchísimo! 💕 Nunca olvides lo especial que eres para mí. 🫶
+  </div>
+
+  <script>
+    function mostrar() {
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+</body>
+</html>
